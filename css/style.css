@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navigation {
+  margin-top: 25px;
+  font-family: var(--font1);
+  height: 74px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-left {
+  display: flex;
+}
+.nav-left span {
+  font-size: 35px;
+  padding-top: 10px;
+}
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+  transition: all 0.3 ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3 ease-in-out;
+}
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+/* .nav-right {
+} */
+
+.content {
+  border-radius: 20px;
+  margin-top: 32px;
+  height: 100%;
+  padding: 9px;
+  /* background-color: rgb(238, 238, 243); */
+  display: flex;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  background-image: url("../images/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Fix: Ensures full coverage */
+  opacity: 0.15;
+  z-index: -1; /* Ensures it stays behind content */
+}
+.content-left {
+  font-family: var(--font1);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-right img {
+  height: 355px;
+  width: 355px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.home-articles {
+  /* height: 455px; */
+
+  padding: 18px;
+  margin-top: 23px;
+  /* background-color: rgb(245, 121, 121); */
+  position: relative;
+}
+.year-box {
+  position: absolute;
+  right: 120px;
+  top: 50px;
+  width: 234px;
+  height: 255px;
+  font-size: 18px;
+  /* background-color: red; */
+}
+
+.home-article {
+  padding: 25px;
+  display: flex;
+}
+.home-article img {
+  width: 250px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+}
+
+.home-article-content a {
+
+  text-decoration: none;
+  color: black;
+ 
+}
+
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+.footer a {
+  color: blue;
+}

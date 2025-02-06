@@ -1,0 +1,26 @@
+.contact-content{
+  border-radius: 20px;
+  margin-top: 32px;
+  height: 100vh;
+  padding: 9px;
+  /* background-color: rgb(238, 238, 243); */
+ position: relative;
+ overflow: hidden;
+}
+
+.contact-content::after {
+    content: "";
+    background-image: url("../images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Fix: Ensures full coverage */
+    opacity: 0.15;
+    z-index: -1; /* Ensures it stays behind content */
+  }
+  .contact-form{
+   
+  }
